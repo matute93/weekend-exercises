@@ -1,9 +1,9 @@
 function toInitials (name) {
-    let parts = name.split(' ')
-    var initials = ''
-    for (let i = 0; i < parts.length; i++) {
-      if (parts[i].length > 0 && parts[i] !== '') {
-        initials += parts[i][0].toUpperCase();
+    let array = name.split(' ')
+    let initials = ''
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].length > 0 && array[i] !== '') {
+        initials += array[i][0].toUpperCase().concat('.');
       }
     }
     return initials
